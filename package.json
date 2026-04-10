@@ -19,6 +19,7 @@
     "start": "tsdown && node dist/index.mjs",
     "typecheck": "tsc",
     "test": "vitest run",
+    "dev": "tsx src/dev.ts",
     "lint": "biome check src",
     "lint:fix": "biome check --fix src",
     "format": "biome format --write src",
