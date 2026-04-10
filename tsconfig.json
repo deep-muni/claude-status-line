@@ -3,9 +3,10 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "baseUrl": ".",
     "paths": {
-      "@utils/*": ["./src/utils/*"],
-      "@segments/*": ["./src/segments/*"]
+      "@utils/*": ["src/utils/*"],
+      "@segments/*": ["src/segments/*"]
     },
     "types": ["node"],
     "strict": true,
