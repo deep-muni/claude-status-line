@@ -4,6 +4,8 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
+      "@utils/*": ["./src/utils/*"],
+      "@segments/*": ["./src/segments/*"]
     },
     "types": ["node"],
     "strict": true,

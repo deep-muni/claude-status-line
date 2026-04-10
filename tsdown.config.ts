@@ -7,5 +7,7 @@ export default defineConfig({
   outDir: "dist",
   clean: true,
   alias: {
+    "@utils": "./src/utils",
+    "@segments": "./src/segments",
   },
 });
