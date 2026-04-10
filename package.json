@@ -1,0 +1,49 @@
+{
+  "name": "claude-status-line",
+  "version": "1.0.0",
+  "description": "Colorful powerline-style status line for Claude Code",
+  "type": "module",
+  "exports": "./dist/index.mjs",
+  "bin": {
+    "claude-status": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.18.0",
+  "scripts": {
+    "build": "tsdown",
+    "start": "tsdown && node dist/index.mjs",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "lint": "biome check src",
+    "lint:fix": "biome check --fix src",
+    "format": "biome format --write src",
+    "check": "tsc && biome check src && vitest run"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "statusline",
+    "powerline",
+    "terminal",
+    "cli"
+  ],
+  "author": "Deep Muni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepmuni/claude-status-line.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.11",
+    "@types/node": "^22.0.0",
+    "tsdown": "^0.21.7",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.4"
+  }
+}
